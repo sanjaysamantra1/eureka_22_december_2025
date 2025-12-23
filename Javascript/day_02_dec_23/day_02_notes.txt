@@ -1,0 +1,66 @@
+HTML Emmets / shortcuts
+========================
+https://docs.emmet.io/cheat-sheet/
+
+
+!
+ol>li*5{Fruit-$}
+select>option*200{Country-$}
+table>tr*10>td*5{Data-$}
+
+
+How to Use CSS in HTML Files
+=============================
+1. inline CSS (style attribute) (Restricted to 1 Element)
+   <h2 style="color: blueviolet;">Fruit List</h2>
+2. internal CSS ( style Tag ) (Restricted to 1 page)
+   <style></style>
+3. external CSS (Application Level)
+    a. write css code in a separate .css File
+    b. include that css file in HTML file using <link>
+
+
+How to use Bootstrap 
+====================
+-CSS Library : pre-defined css classnames
+-Maintained by Twitter
+-Bootstrap 5 is the latest version
+-Official Bootstrap Link : https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+Add CDN Link to the <head></head> of HTML File
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+Types of Javascript
+===================
+1. Internal Javascript <script></script> Page level
+2. External ( separate .js file and include in HTML file) Application Level
+
+
+
+How to Write & Execute Javascript code
+======================================
+1. Browser (FrontEnd Development)
+    a. create a javascript file with some javascript code (counter.js)
+    b. include that .js file into HTML file
+        <script src='counter.js'></script>
+    c. open HTML file in browser ( alt + b )
+
+2. NodeJS (BackEnd Development)
+   a. create a javascript file with some javascript code (addition.js)
+   b. run the javascript file with the below command
+       node <filename>.js  (make sure nodejs is installed)
+
+       
+Note : Every Javascript code that runs on browse might not work in nodejs, and voce versa
+
+
+Most Commonly Used javascript Objects/Classes
+=============================================
+console : log(), warn() , error(), table(), dir(), time(), timeEnd()
+window :  alert() , prompt() , confirm() , atob() , btoa()
+document : getElementById() , querySelector()
+Math : max(), min(), sqrt(), abs()
+Array : push(), pop(), shift()
+Object : keys(), values(), entries(), groupBy()
+JSON : stringify() , parse()
