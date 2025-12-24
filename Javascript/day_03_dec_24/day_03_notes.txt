@@ -1,0 +1,84 @@
+window :  alert() , prompt() , confirm() , atob() , btoa()
+document : getElementById() , querySelector() , querySelectorAll()
+
+
+
+Window Object Methods
+=====================
+alert : To Display message 
+        Message + Ok
+
+confirm : User Confirmation
+          Message + Ok(true) + cancel(false)
+
+prompt : To Collect user input
+         Message + inputBox + Ok , Cancel          
+
+
+
+
+Datatypes
+=========
+-Type of data we are dealing 
+1. Primitive    2. non-primitive
+
+Primitive
+   number : 5 , 4.5  , -4.5
+   string : 'sanjay' , '15' , 'true' , ''
+   boolean : true / false
+   undefined : undefined
+   bigint
+   symbol
+non-primitive 
+    object : {} , [] 
+
+
+undefined vs null
+==================
+-when a variable is declared without any value, javascript assigns 'undefined' value to that variable.
+-'null' is an intensional value assigned by developers
+-typeof 'undefined' is undefined, typeof 'null' is object
+
+Q. typeof 'null' is object, is 'null' a non-primitive value?
+Note: even though typeof 'null' is object, null is a primitive value
+
+
+
+
+
+Javascript: Programming Language , follows ECMAScript Standards
+ECMA : European Computer Menufecturers Association
+ECMAScript: Set of standards , followed by javascript
+
+
+ES_5   Before June 2015
+ES_6   2015 ( const  , let , class , extends , module , promise , .....)
+ES_7   2016
+ES_8   2017
+ES_9   2018
+ES_10   2019
+ES_11   2020
+ES_12   2021
+ES_13   2022
+ES_14   2023
+ES_15   2024
+ES_16   2025
+
+
+Variables
+=========
+-variables are containers for storing data values.
+-variables can be declared by using either one of the below 3 keywords
+  1. var
+  2. let
+  3. const
+
+        var                       let                            const 
+===========================================================================
+1.since begining		 1.ECMASCRIPT-6(2015)		1.ECMASCRIPT-6(2015)
+2.value can be changed           2.value can be changed         2.cann't be changed
+3.initialization is		 3.initialization is		3.mandatory
+	not mandatory           not mandatory	
+4.can be redeclared		 4.cann't be redeclared		4.cann't be redeclared
+5.function/global		 5.block/function/global	5.block/function/global
+6.TDZ - No			 6.TDZ - Yes		        6.TDZ - Yes
