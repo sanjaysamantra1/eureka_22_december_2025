@@ -36,3 +36,10 @@ this
 ====
 Regular Function : this = how/where the function is invoked
 Arrow Function  : this = where the arrow function is written (lexical scope)
+
+
+
+Arrow Function Benefits
+=========================
+1. Arrow Function uses 'this' value from lexical/outer scope
+2. in Arrow functions 'this' is static 
