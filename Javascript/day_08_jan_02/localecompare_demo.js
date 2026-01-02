@@ -1,0 +1,5 @@
+// returns 1 , -1 , 0
+
+console.log('ajay'.localeCompare('deepak')); // -1
+console.log('deepak'.localeCompare('ajay')); // 1
+console.log('deepak'.localeCompare('deepak')); // 0
