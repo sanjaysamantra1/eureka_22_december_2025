@@ -1,0 +1,22 @@
+<script>
+    // ES_6
+    class Student {
+        constructor(roll, fName, lName, address) { // cosntructor function
+            this.roll = roll;
+            this.fName = fName;
+            this.lName = lName;
+            this.address = address;
+        }
+    }
+    Student.prototype.clgName = 'Eureka';
+    let std1 = new Student(101, 'saketh', 'gupta', 'Texas');
+
+    console.log(std1.hasOwnProperty('roll')); // true
+    console.log('roll' in std1); // true
+
+    console.log(std1.hasOwnProperty('clgName')); // false
+    console.log('clgName' in std1); // true
+
+    console.log(std1.hasOwnProperty('dateOfBirth')); // false
+    console.log('dateOfBirth' in std1); // false
+</script>

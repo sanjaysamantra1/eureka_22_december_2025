@@ -1,0 +1,20 @@
+<script>
+    // ES_6
+    class Student {
+        constructor(roll, fName, lName, address) { // cosntructor function
+            this.roll = roll;
+            this.fName = fName;
+            this.lName = lName;
+            this.address = address;
+        }
+        fullName() {
+            console.log(this.fName + " " + this.lName)
+        }
+    }
+    let std1 = new Student(101, 'saketh', 'gupta', 'Texas');
+    let std2 = new Student(102, 'sujith', 'kumar', 'tennesse');
+    console.log(std1)
+    console.log(std2)
+
+    std1.fullName();
+</script>

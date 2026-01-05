@@ -1,0 +1,19 @@
+<script>
+    let user = { firstName: 'sachin', 'last name': 'Tendulkar', age: 35, add: 'mumbai' };
+
+    console.log(user.Age); // undefined
+    console.log(user.age);
+    console.log(user['add']);
+
+    // console.log(user.last name);
+    console.log(user['last name']);
+
+    for (key in user) {
+        console.log(key + " ===== " + user[key])
+    }
+
+
+    // Length of an object
+    let all_keys = Object.keys(user);
+    console.log(all_keys, all_keys.length)
+</script>

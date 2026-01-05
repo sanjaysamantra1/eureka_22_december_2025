@@ -1,0 +1,32 @@
+<script>
+    // ES_6
+    class Student {
+        constructor(roll, fName, lName, address) { // cosntructor function
+            this.roll = roll;
+            this.fName = fName;
+            this.lName = lName;
+            this.address = address;
+            // this.clgName = 'Eureka';
+        }
+        fullName1() { // prototype
+            console.log(this.fName + " " + this.lName)
+        }
+        fullName2 = () => { // direct
+            console.log(this.fName + " " + this.lName)
+        }
+    }
+    Student.prototype.clgName = 'Eureka';
+    Student.prototype.fullName3 = function () { // prototype
+        console.log(this.fName + " " + this.lName)
+    }
+
+    let std1 = new Student(101, 'saketh', 'gupta', 'Texas');
+    let std2 = new Student(102, 'sujith', 'kumar', 'tennesse');
+    console.log(std1)
+    console.log(std2)
+    console.log(`fName:${std1.fName} , lName:${std1.lName}, clgName:${std1.clgName}`);
+
+    std1.clgName = 'Eureka Infotech';
+    console.log(`fName:${std1.fName} , lName:${std1.lName}, clgName:${std1.clgName}`);
+    console.log(`fName:${std2.fName} , lName:${std2.lName}, clgName:${std2.clgName}`);
+</script>

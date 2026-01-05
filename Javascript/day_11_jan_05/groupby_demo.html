@@ -1,0 +1,30 @@
+<script>
+    let employees = [
+        { id: 1, name: 'Amit Sharma', gender: 'male', salary: 85000, status: 'Active' },
+        { id: 2, name: 'Priya Verma', gender: 'female', salary: 65000, status: 'Active' },
+        { id: 3, name: 'Rahul Mehta', gender: 'male', salary: 38000, status: 'Inactive' },
+        { id: 4, name: 'Sneha Iyer', gender: 'female', salary: 42000, status: 'Inactive' },
+        { id: 5, name: 'Karan Singh', gender: 'male', salary: 52000, status: 'Active' },
+        { id: 6, name: 'Neha Gupta', gender: 'female', salary: 72000, status: 'Active' }
+    ];
+
+    let groupBy_gender = Object.groupBy(employees, (emp) => emp.gender);
+    console.log(groupBy_gender)
+
+    let groupBy_status = Object.groupBy(employees, (emp) => emp.status);
+    console.log(groupBy_status)
+
+
+    // Custom Implementation
+    let obj = {}
+    for (emp of employees) {
+        const genderValue = emp.gender;
+        if (obj[genderValue]) {
+            obj[genderValue].push(emp)
+        } else {
+            obj[genderValue] = [];
+            obj[genderValue].push(emp)
+        }
+    }
+    console.log(obj)
+</script>
