@@ -1,0 +1,35 @@
+<h3 class="text-center">Let's Learn Data Binding</h3>
+
+<div class="border border-2 rounded-2 p-2 m-2">
+  <h4>Interpolation & Property Binding</h4>
+
+  <div>User Name is: {{userName}} </div>
+  <div>User Name is: <span [innerText]="userName"></span></div>
+  <div>User Name is: <span bind-innerText="userName"></span></div>
+
+  <img src="{{img_url}}" alt="" width="300" height="300" />
+  <img [src]="img_url" alt="" width="300" height="300" />
+  <img bind-src="img_url" alt="" width="300" height="300" />
+
+  <p class="mt-2">1 way: <input type="text" value="{{userName}}" /></p>
+  <p class="mt-2">1 way: <input type="text" [value]="userName" /></p>
+  <p class="mt-2">1 way: <input type="text" bind-value="userName" /></p>
+  <p class="mt-2">2 way: <input type="text" [(ngModel)]="userName" /></p>
+
+  <div>
+    <button class="btn btn-primary" disabled="{{flag}}">Click Me</button>
+    <button class="btn btn-primary mx-2" [disabled]="flag">Click Me</button>
+    <button class="btn btn-primary" bind-disabled="flag">Click Me</button>
+    <div>Flag:: {{flag}}</div>
+    <button class="btn btn-primary mx-2" (click)="toggleFlag()">Toggle Flag</button>
+    <button class="btn btn-primary mx-2" on-click="toggleFlag()">Toggle Flag</button>
+  </div>
+
+</div>
+<div class="border border-2 rounded-2 p-2 m-2">
+  <h4>Attribute Binding:</h4>
+  <textarea maxLength="{{max_length}}"></textarea>
+  <textarea [maxLength]="max_length" class="mx-2"></textarea>
+  <textarea [attr.maxlength]="max_length" class="mx-2"></textarea>
+  <!-- maxLength is Property, maxlength is attribute -->
+</div>
