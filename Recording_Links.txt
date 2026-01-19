@@ -63,3 +63,7 @@ day_16_jan_18:
 https://zoom.us/rec/share/3WsU3l0TrkAry3nf_iqSXpeK_d-tD5cwz95mZUDYY3pmRqCeUbE-dYmtsEB8aO4G.NevtsGDbRdAAoE9v 
 Passcode: M234K.uB
 
+day_16_jan_19:
+https://zoom.us/rec/share/4SoNLZ-IFOclPdk6mJmslVCbiTkK4Y2Mzn_0AbHO_HunQWaAz6m3BHU2tfup0Fn4.LmsKEanmN7qjHWKv 
+Passcode: 4*.@E6F@
+
