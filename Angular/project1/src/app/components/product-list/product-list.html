@@ -2,11 +2,18 @@
 
 <div class="container">
   <div class="row">
+    <div class="col-sm-6 offset-3">
+      <!-- <input type="search" class="form-control" placeholder="Search..." appCharOnly /> -->
+      <!-- <input type="search" class="form-control" placeholder="Search..." appAlphaNumeric  /> -->
+      <input type="search" class="form-control" placeholder="Search..." appDisableCopyPaste  />
+    </div>
+  </div>
+  <div class="row mt-2">
     @for (product of productArr; track $index) {
     <div class="col-sm-3">
       <div class="card text-center">
         <img src="{{product.image}}" class="card-img-top" alt="..." height="250px">
-        <div class="card-body">
+        <div class="card-body" appZoomin>
           <h5 class="card-title">{{product.category}}</h5>
           <p class="card-text text-truncate">{{product.title}}</p>
           <p class="card-text text-truncate">{{product.description}}</p>
