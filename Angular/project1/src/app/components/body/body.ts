@@ -1,3 +1,4 @@
+import { PipesDemo } from './../pipes-demo/pipes-demo';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Databinding } from '../databinding/databinding';
 import { Directives } from '../directives/directives';
@@ -11,8 +12,9 @@ import { UserList } from '../user-list/user-list';
     // Databinding
     // Directives
     // MyModal
-    ProductList,
-    UserList
+    // ProductList,
+    // UserList
+    PipesDemo
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
