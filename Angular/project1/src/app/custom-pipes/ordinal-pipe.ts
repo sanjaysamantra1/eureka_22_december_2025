@@ -2,9 +2,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'ordinal',
+  pure: true  // pure pipe
 })
 export class OrdinalPipe implements PipeTransform {
   transform(input: number) {
+    console.log('Ordinal Pipe called...')
     let rem = input % 10;
     let res = '';
     switch (rem) {
