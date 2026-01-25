@@ -5,6 +5,7 @@ import { Directives } from '../directives/directives';
 import { MyModal } from '../my-modal/my-modal';
 import { ProductList } from '../product-list/product-list';
 import { UserList } from '../user-list/user-list';
+import { ParentDemo } from '../parent-demo/parent-demo';
 
 @Component({
   selector: 'app-body',
@@ -14,7 +15,8 @@ import { UserList } from '../user-list/user-list';
     // MyModal
     // ProductList,
     // UserList
-    PipesDemo
+    // PipesDemo
+    ParentDemo
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',

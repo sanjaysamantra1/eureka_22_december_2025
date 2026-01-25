@@ -27,4 +27,8 @@ export class PipesDemo {
   myNum = 21;
 
   arr = [50, 10, 40, 20, 30];
+
+  testFun(){
+    console.log('I am test function')
+  }
 }
