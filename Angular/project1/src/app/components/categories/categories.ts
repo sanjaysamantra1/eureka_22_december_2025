@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { CategoryItem } from '../category-item/category-item';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-categories',
   imports: [
+    FormsModule,
     CategoryItem
   ],
   templateUrl: './categories.html',
