@@ -83,13 +83,21 @@ day_20_jan_23:
 https://zoom.us/rec/share/etVhqlHryRNB4SI5bTmCfAn5CHpYh_hi7MsMRbTSzT3lqWOBxcPSJtEwB4GjBE4q.ex6eT3Ow0d_0bdGC 
 Passcode: 5SyqcR7=
 
-day_20_jan_24:
+day_21_jan_24:
 https://zoom.us/rec/share/imiWvyz_v4SpN-NE5m3QkRHln2M62tcgVlQWAxdL5QbTgTcBTLbSn3CargzYyRmQ.B59qHLqL_yZ3XsFX 
 Passcode: #pQ2OiiV
 
-day_20_jan_25:
+day_22_jan_25:
 https://zoom.us/rec/share/DrbJfowQUJTOD1ZMbqa_5N_tNrgqp3dWn6udterW8RjpQgexYd6abwDKt_avxGau.CN0py3zlhbnYdTgl 
 Passcode: ^rEX5J.*
+
+day_23_jan_26:
+https://zoom.us/rec/share/fKs-Hza6bxGr_m7QgXPH0nB5razb2T8u-eXx0mvIck_4yrrF6CmFSI5No08OFTwK.tZ6zri7xU3lX771Z 
+Passcode: p=M309dI
+
+day_24_jan_27:
+https://zoom.us/rec/share/Ihp9GZDZIKiIciuTDzLH7P8Wyo8J9BTEAQVyk0-Hmcxu4-BNrjM8ad6M0NNxsc32.zTrBVvTG-TGOVxCf 
+Passcode: uR%4rNpn
 
 
 
