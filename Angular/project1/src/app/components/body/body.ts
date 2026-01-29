@@ -11,6 +11,7 @@ import { Demo1 } from '../demo1/demo1';
 import { Demo2 } from '../demo2/demo2';
 import { ClockDemo } from '../clock-demo/clock-demo';
 import { CommentList } from '../comment-list/comment-list';
+import { EmployeeCrud } from '../employee-crud/employee-crud';
 
 @Component({
   selector: 'app-body',
@@ -26,7 +27,8 @@ import { CommentList } from '../comment-list/comment-list';
     // Demo2
     // ClockDemo
     // HttpDemo1
-    CommentList
+    // CommentList
+    EmployeeCrud
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
