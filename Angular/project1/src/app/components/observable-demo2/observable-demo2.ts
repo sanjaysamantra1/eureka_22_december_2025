@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { forkJoin } from 'rxjs';
+import { concatMap, forkJoin, mergeMap, of } from 'rxjs';
 
 @Component({
   selector: 'app-observable-demo2',
@@ -12,7 +12,9 @@ export class ObservableDemo2 {
   httpClient = inject(HttpClient);
 
   ngOnInit() {
-    this.forkjoin_demo();
+    // this.forkjoin_demo();
+    // this.mergeMap_demo();
+    this.concatMap_demo();
   }
   forkjoin_demo() {
     const user_obs = this.httpClient.get('https://jsonplaceholder.typicode.com/users')
@@ -27,6 +29,36 @@ export class ObservableDemo2 {
         console.log('1 of the api failed')
       }
     );
+  }
+
+  mergeMap_demo() {
+    const users = of(1, 2, 3, 4, 5); // users is an observable
+
+    // without mergeMap , using subscribe inside subscribe
+    /* users.subscribe((userId) => {
+      this.httpClient.get(`https://jsonplaceholder.typicode.com/users/${userId}`)
+        .subscribe(userInfo => {
+          console.log(userInfo)
+        })
+    }); */
+
+    // with mergeMap
+    users.pipe(mergeMap((userId) => {
+      return this.httpClient.get(`https://jsonplaceholder.typicode.com/users/${userId}`)
+    })).subscribe((userResponse) => {
+      console.log(userResponse);
+    })
+
+  }
+  concatMap_demo() {
+    const users = of(1, 2, 3, 4, 5); // users is an observable
+    // with concatMap
+    users.pipe(concatMap((userId) => {
+      return this.httpClient.get(`https://jsonplaceholder.typicode.com/users/${userId}`)
+    })).subscribe((userResponse) => {
+      console.log(userResponse);
+    })
+
   }
 
 }
