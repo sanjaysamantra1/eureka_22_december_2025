@@ -115,3 +115,7 @@ https://drive.google.com/drive/folders/19t5Av1KIQZh4uO8-0fabP3cmDECaDGBg?usp=dri
 day_28_jan_31:
 https://zoom.us/rec/share/RcwfHJ735_3Ggd03jUquS5E8UW0nLLZN9ZSTsaEUHMisp5B48c39chrf5EIbiqVa.GfYu9kgRvDIMdptv 
 Passcode: &1M8GbvF
+
+day_29_feb_1:
+https://zoom.us/rec/share/EjIezZmFFLB3kkdjWOGCe85-ehArhfB37QZuB0HiSthY4yUbsAX5a189_yCYJR7A.u5X8IZOl28DPS3Ck 
+Passcode: .ia%v52c
