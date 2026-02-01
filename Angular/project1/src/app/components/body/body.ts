@@ -1,3 +1,4 @@
+import { SubjectDemo1 } from './../subject-demo1/subject-demo1';
 import { HttpDemo1 } from './../http-demo1/http-demo1';
 import { PipesDemo } from './../pipes-demo/pipes-demo';
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -15,6 +16,8 @@ import { EmployeeCrud } from '../employee-crud/employee-crud';
 import { ObservableDemo1 } from '../observable-demo1/observable-demo1';
 import { ObservableDemo2 } from '../observable-demo2/observable-demo2';
 import { ObservableDemo3 } from '../observable-demo3/observable-demo3';
+import { TodoList } from '../todo-list/todo-list';
+import { TodoAdd } from '../todo-add/todo-add';
 
 @Component({
   selector: 'app-body',
@@ -34,7 +37,10 @@ import { ObservableDemo3 } from '../observable-demo3/observable-demo3';
     // EmployeeCrud
     // ObservableDemo1
     // ObservableDemo2
-    ObservableDemo3
+    // ObservableDemo3
+    // SubjectDemo1
+    TodoList,
+    TodoAdd
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
