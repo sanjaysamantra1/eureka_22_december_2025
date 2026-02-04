@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-model-driven-form',
@@ -14,20 +14,37 @@ import { FormControl, FormGroup, NgForm, ReactiveFormsModule, Validators } from 
 export class ModelDrivenForm {
   registerForm!: FormGroup;
 
-  constructor() {
-    this.registerForm = new FormGroup({
+  constructor(private fb: FormBuilder) {
+    /* this.registerForm = new FormGroup({
       firstName: new FormControl('Virat', [Validators.required, Validators.minLength(5)]),
       lastName: new FormControl('Kohli', [Validators.required]),
-      email: new FormControl('', [Validators.required]),
+      email: new FormControl('', []),
       address: new FormGroup({
         city: new FormControl(),
         state: new FormControl(),
         pincode: new FormControl(),
       })
-    })
+    }, { updateOn: 'blur' }) */
+
+    this.registerForm = this.fb.group({
+      firstName: ['Virat', [Validators.required, Validators.minLength(5)]],
+      lastName: ['Kohli', [Validators.required]],
+      email: ['Virat@gmail.com', [Validators.required]],
+      address: this.fb.group({
+        city: [],
+        state: [],
+        pincode: []
+      })
+    });
+
   }
 
   submitMyForm() {
     console.log(this.registerForm)
+  }
+
+  updateFormData() {
+    // this.registerForm.patchValue({ firstName: 'sanjay' });
+    this.registerForm.setValue({ firstName: 'sanjay' });
   }
 }

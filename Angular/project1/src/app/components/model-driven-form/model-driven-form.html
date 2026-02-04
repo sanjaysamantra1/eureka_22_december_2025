@@ -2,7 +2,15 @@
 
 <div class="col-sm-4 offset-4 border border-3 rounded-3 p-3">
   <form [formGroup]="registerForm" (submit)="submitMyForm()">
-    <p>FirstName: <input formControlName="firstName"> </p>
+    <p>
+      FirstName: <input formControlName="firstName">
+      @if(registerForm.controls['firstName'].hasError('required')){
+        <span class="text-danger">FirstName is Required</span>
+      }
+      @if(registerForm.controls['firstName'].hasError('minlength')){
+        <span class="text-danger">FirstName should have 5 chars</span>
+      }
+    </p>
     <p>lastName: <input formControlName="lastName"> </p>
     <p>Email: <input formControlName="email"> </p>
     <div formGroupName="address">
@@ -12,8 +20,10 @@
     </div>
 
     <input type="reset" value="Reset">
-    <input type="submit" value="Submit" [disabled]="registerForm.invalid">
+    <input class="mx-2" type="submit" value="Submit" [disabled]="registerForm.invalid">
+
   </form>
+  <button class="btn btn-primary" (click)="updateFormData()">Patch Value</button>
   <hr />
   <pre>
     {{registerForm.value | json}}
