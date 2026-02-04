@@ -23,6 +23,7 @@ import { TodoAdd } from '../todo-add/todo-add';
 import { SignalDemo2 } from '../signal-demo2/signal-demo2';
 import { TemplateForm } from '../template-form/template-form';
 import { ModelDrivenForm } from '../model-driven-form/model-driven-form';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-body',
@@ -50,7 +51,8 @@ import { ModelDrivenForm } from '../model-driven-form/model-driven-form';
     // SignalDemo2
     // FormDemo1
     // TemplateForm
-    ModelDrivenForm
+    // ModelDrivenForm
+    RouterOutlet
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
