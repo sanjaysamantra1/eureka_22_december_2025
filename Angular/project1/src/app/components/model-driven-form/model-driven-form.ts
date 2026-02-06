@@ -44,7 +44,6 @@ export class ModelDrivenForm {
   }
 
   updateFormData() {
-    // this.registerForm.patchValue({ firstName: 'sanjay' });
     this.registerForm.setValue({ firstName: 'sanjay' });
   }
 }
