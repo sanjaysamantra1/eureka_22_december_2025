@@ -141,3 +141,8 @@ Passcode: g?@T2Exe
 day_32_feb_6:
 https://zoom.us/rec/share/dPHcb5kS2rupr35Oe_dGpuZxWiFRDSdKlzJOyXB4tE-ls2I81WpEE4I8q6yaf0JQ.tJKQKCPCAKGURcSb 
 Passcode: U@5qr359
+
+
+day_33_feb_7:
+https://zoom.us/rec/share/eMLNX0ytHdhV8vYOYzoHggHIGiRotmCt0DVhCHf_VQrU3wJwEycwvpE5id5JQPOl.z2zKsKqQ0E0WUBRq 
+Passcode: 6AxA$=F2
